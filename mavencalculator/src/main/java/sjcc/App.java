@@ -8,6 +8,13 @@ public class App
 {
     public static void main( String[] args )
     {
+        double A = 0.0;
+        double B = 0.0;
+
+        printMenu(A, B);
+    }
+
+    public static void printMenu(double A, double B){
         System.out.println("****************************************\n");
         System.out.println("    Chavvi Calculator    \n");
         System.out.println("****************************************\n");
@@ -23,8 +30,5 @@ public class App
         System.out.println("q    :    quit\n");
         System.out.println("****************************************\n");
 
-
-
-        
     }
 }
