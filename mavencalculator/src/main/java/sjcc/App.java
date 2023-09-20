@@ -18,7 +18,7 @@ public class App
         System.out.println("****************************************\n");
         System.out.println("    Chavvi Calculator    \n");
         System.out.println("****************************************\n");
-        System.out.println("    A = 0.0000    |    B = 0.0000\n");
+        System.out.printf("    A = %.4f    |    B = %.4f%n", A, B);
         System.out.println("****************************************\n");
         System.out.println("a    :    add value for A\n");
         System.out.println("b    :    add value for B\n");
