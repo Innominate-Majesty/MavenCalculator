@@ -7,6 +7,7 @@ import java.util.Scanner;
 //Chavvi Calculator Assignment
 //Sep 20 2023
 
+
 public class App 
 {
     public static void main( String[] args )
@@ -45,6 +46,11 @@ public class App
                         userInput.next();
                     }
                     break;
+                case "c":
+                    A = 0.0;
+                    B = 0.0;
+                    System.out.println("Cleared successfully!\n");
+                    break;
                 case "+":
                     System.out.println("Result: \n" + String.format("%.3f", A + B));
                     break;
@@ -56,11 +62,6 @@ public class App
                     break;
                 case "/":
                     System.out.println("Result: \n" + String.format("%.3f", A / B));
-                    break;
-                case "c":
-                    A = 0.0;
-                    B = 0.0;
-                    System.out.println("Cleared successfully!\n");
                     break;
                 case "q":
                     System.out.println("Quitting..........\n");
