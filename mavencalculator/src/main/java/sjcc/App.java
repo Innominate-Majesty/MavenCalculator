@@ -2,6 +2,11 @@ package sjcc;
 
 import java.util.Scanner;
 
+//Venus H
+//For class: CIS 055 and 059
+//Chavvi Calculator Assignment
+//Sep 20 2023
+
 public class App 
 {
     public static void main( String[] args )
@@ -75,7 +80,7 @@ public class App
 
     public static void printMenu(double A, double B){
         System.out.println("****************************************\n");
-        System.out.println("    Chavvi Calculator    \n");
+        System.out.println("    Chavvi Calculator by Venus   \n");
         System.out.println("****************************************\n");
         System.out.printf("    A = %.3f    |    B = %.3f%n", A, B);
         System.out.println("****************************************\n");
