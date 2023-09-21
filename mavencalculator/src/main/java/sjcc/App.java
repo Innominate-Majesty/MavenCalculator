@@ -22,11 +22,23 @@ public class App
             switch (command) {
                 case "a":
                     System.out.print("Enter the value for A: ");
-                    A = userInput.nextDouble();
+                    if (userInput.hasNextDouble()) {
+                        A = userInput.nextDouble();
+                    }
+                    else {
+                        System.out.println("Error. Please enter a number");
+                        userInput.next();
+                    }
                     break;
                 case "b":
                     System.out.print ("Enter the value for B: ");
-                    B = userInput.nextDouble();
+                    if (userInput.hasNextDouble()) {
+                        B = userInput.nextDouble();
+                    }
+                    else {
+                        System.out.println("Error. Please enter a number");
+                        userInput.next();
+                    }
                     break;
                 case "+":
                     System.out.println("Result: " + String.format("%.3f", A + B));
@@ -40,6 +52,11 @@ public class App
                 case "/":
                     System.out.println("Result: " + String.format("%.3f", A / B));
                     break;
+                case "c":
+                    A = 0.0;
+                    B = 0.0;
+                    System.out.println("Cleared successfully!");
+                    break;
                 case "q":
                     System.out.println("Quitting..........");
                     break;
@@ -49,7 +66,6 @@ public class App
             }
 
             printMenu(A, B);
-
         }
 
         while (!command.equals("q"));
@@ -61,7 +77,7 @@ public class App
         System.out.println("****************************************\n");
         System.out.println("    Chavvi Calculator    \n");
         System.out.println("****************************************\n");
-        System.out.printf("    A = %.4f    |    B = %.4f%n", A, B);
+        System.out.printf("    A = %.3f    |    B = %.3f%n", A, B);
         System.out.println("****************************************\n");
         System.out.println("a    :    add value for A\n");
         System.out.println("b    :    add value for B\n");
