@@ -79,6 +79,7 @@ public class App
     }
 
     public static void printMenu(double A, double B){
+        System.out.println("  ");
         System.out.println("****************************************\n");
         System.out.println("    Chavvi Calculator by Venus   \n");
         System.out.println("****************************************\n");
