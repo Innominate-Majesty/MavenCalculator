@@ -16,49 +16,49 @@ public class App
 
         String command;
         do{
-            System.out.print("Enter a command: ");
+            System.out.print("Enter a command: \n");
             command = userInput.next().trim();
 
             switch (command) {
                 case "a":
-                    System.out.print("Enter the value for A: ");
+                    System.out.print("Enter the value for A: \n");
                     if (userInput.hasNextDouble()) {
                         A = userInput.nextDouble();
                     }
                     else {
-                        System.out.println("Error. Please enter a number");
+                        System.out.println("Error. Please enter a number!\n");
                         userInput.next();
                     }
                     break;
                 case "b":
-                    System.out.print ("Enter the value for B: ");
+                    System.out.print ("Enter the value for B: \n");
                     if (userInput.hasNextDouble()) {
                         B = userInput.nextDouble();
                     }
                     else {
-                        System.out.println("Error. Please enter a number");
+                        System.out.println("Error. Please enter a number!\n");
                         userInput.next();
                     }
                     break;
                 case "+":
-                    System.out.println("Result: " + String.format("%.3f", A + B));
+                    System.out.println("Result: \n" + String.format("%.3f", A + B));
                     break;
                 case "-":
-                    System.out.println("Result: " + String.format("%.3f", A - B));
+                    System.out.println("Result: \n" + String.format("%.3f", A - B));
                     break;
                 case "*":
-                    System.out.println("Result: " + String.format("%.3f", A * B));
+                    System.out.println("Result: \n" + String.format("%.3f", A * B));
                     break;
                 case "/":
-                    System.out.println("Result: " + String.format("%.3f", A / B));
+                    System.out.println("Result: \n" + String.format("%.3f", A / B));
                     break;
                 case "c":
                     A = 0.0;
                     B = 0.0;
-                    System.out.println("Cleared successfully!");
+                    System.out.println("Cleared successfully!\n");
                     break;
                 case "q":
-                    System.out.println("Quitting..........");
+                    System.out.println("Quitting..........\n");
                     break;
                 default:
                     System.out.println("ERROR"); 
